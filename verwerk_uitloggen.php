@@ -2,10 +2,10 @@
 session_start();
 if(isset($_SESSION["ingelogd"]) && $_SESSION["ingelogd"]) {
     session_destroy();
-    echo "uitloggen gelukt";
+    echo "logout finished"; 
 }
 else 
-    echo "uitloggen mislukt";
+    echo "logout failed";
     
 echo "<hr>";
 echo '<a href="index.php">Index</a>';
